@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "9694142862",
+    "project_id": "flex-3f7f1",
+    "storage_bucket": "flex-3f7f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9694142862:android:e0bc86b9ad7688e056c4df",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9694142862-ttkbk4ca1idk3v8jbf87cv5sbmvh72n8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "e3dd271f842e4891f20d410b521085950dff07e2"
+          }
+        },
+        {
+          "client_id": "9694142862-34np6f73vnee1oer3kdljoh7hs7ittvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK8rCe6-i1faUIfaBM_xp7cMWf97AbR-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9694142862-34np6f73vnee1oer3kdljoh7hs7ittvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

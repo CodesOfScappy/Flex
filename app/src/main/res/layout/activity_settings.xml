@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2"
+    tools:context=".SettingsActivity">
+
+
+    <View
+        android:id="@+id/backgroundLogo"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/kugel3"
+        android:rotationX="7" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="#000000"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/set_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_profile_image"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/field_frame"
+        android:drawableStart="@drawable/edit_profile"
+        android:hint="username"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/set_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_user_name"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/field_frame"
+        android:drawableStart="@drawable/edit_status"
+        android:hint="Hey i´am available now"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnSetting"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/link_frame"
+        android:backgroundTint="#3EFFFFFF"
+        android:fontFamily="@font/abril_fatface"
+        android:letterSpacing="0.1"
+        android:text="Update"
+        android:textColor="#F30808" />
+
+    <TextView
+        android:id="@+id/statusEditText"
+        android:layout_below="@id/backgroundLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Your Status TAG is Only Visible to your allowed Messenger Contacts. Not for the Persons in your Phonebook"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="74dp"
+            android:background="@color/black2"/>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:rotation="-12"
+            android:src="@drawable/image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="173dp"
+            android:fontFamily="@font/brush_king"
+            android:letterSpacing="0.1"
+            android:rotation="-9"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="29sp" />
+
+
+        <ImageButton
+            android:id="@+id/backArrow"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_backarrow" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

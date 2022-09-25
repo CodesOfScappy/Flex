@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_image"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@color/black">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:rotation="-11"
+            android:src="@drawable/flex" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="29dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/brush_king2"
+            android:letterSpacing="0.1"
+            android:rotation="-9"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/bubbles2"
+            app:tint="@color/white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inputArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_image"
+
+        android:background="@color/black">
+
+        <EditText
+            android:id="@+id/regEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/frame"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"
+            android:hint="Enter your Email..."
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/regPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regEmail"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/frame"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint="Enter your Password..."
+            android:inputType="textPassword"
+            android:textColorHint="#78909C" />
+
+
+
+
+        <TextView
+            android:id="@+id/alreadyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regPassword"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp"
+            android:text="Already Registered"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/ic_arrow_right_24"
+            app:drawableEndCompat="@drawable/ic_arrow_left_24" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/regText"
+        android:layout_below="@id/inputArea"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="120dp"
+            android:background="@drawable/link_frame2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            android:textColor="#F10606"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Register"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            android:fontFamily="@font/brush_king"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="or Register with"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/regText"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/btn_reg_Facebook"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:scaleType="centerCrop"
+            android:src="@drawable/facebook"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_reg_Phone"
+            android:layout_width="70dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bild2"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_reg_Google"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:scaleType="fitCenter"
+            android:src="@drawable/google2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
